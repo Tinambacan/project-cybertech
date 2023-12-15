@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e8e8e8;
+}
+.container{
+    height: 200px;
+    position: relative;
+    background-color: #546ca1;
+    border-radius: 15px 15px;  
+}
+
+.input-location{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 25px;
+    width: 60%;
+    text-align: center;
+    border-radius: 75px 75px;
+}
+
+.fa-location-dot {
+    position: absolute;
+    left: 30px;
+    top: 22px; 
+    transform: translateY(-50%);
+    color: #7e0202;
+}
+.h2-1{
+    margin-left: 35px;
+    margin-top: 10px;
+    color: white;
+}
+
+.p-1{
+    margin-left: 40px;
+    margin-top: 10px;
+    color: white;
+}
+.search-container {
+    position: relative;
+}
+  
+.input-tracking {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 40px;
+    width: 77%; 
+    padding-left: 40px; 
+}
+  
+.fa-magnifying-glass {
+    position: absolute;
+    left: 25px; /* Adjust the left position based on the desired space */
+    top: 67%; /* Center the icon vertically */
+    transform: translateY(-50%);
+    color: #b8bbc1;
+}
+  
+.search-tracking {
+    position: absolute;
+    right: 30px;
+    top: 67%; /* Adjust the top position based on the desired vertical alignment */
+    transform: translateY(-50%);
+    color: white;
+    background-color: #0f1c54;
+    height: 30px;
+    width: 70px;
+    border-radius: 75px 75px; /* This creates a circular shape for the button */
+    border: none;
+    cursor: pointer;
+}
+  
+
+@media (min-width: 576px) {
+    .custom-col {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+}
+
