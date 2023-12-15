@@ -20,4 +20,4 @@ Features:
 CyberTech Logistic is your trusted partner for hassle-free logistics management. Explore CyberTech Logistic today 
 and revolutionize your logistics experience!
 
-Website: cybertechlogistic.online
+Website: https://cybertechlogistic.online
