@@ -30,7 +30,6 @@ body {
     font-size: 15px;
 } 
 
-/* shipment status- in transit styles */
 .status-container {
     margin: 20px;
     margin-top: 20px;
@@ -41,7 +40,6 @@ body {
     margin-bottom: 10px;
 }
   
-/* Status text styles */
 .status {
     background-color: #546CA1;
     color: white;
@@ -52,7 +50,6 @@ body {
     
 }
 
-/* Footer styles */
 footer {
     position: fixed;
     bottom: 0;
@@ -62,7 +59,6 @@ footer {
     text-align: center;
 }
 
-/* Footer icon styles */
 .footer-icons {
     background-color: #3498db;
     font-size: 24px;
