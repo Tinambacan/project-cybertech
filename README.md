@@ -21,3 +21,11 @@ CyberTech Logistic is your trusted partner for hassle-free logistics management.
 and revolutionize your logistics experience!
 
 **Website:** https://cybertechlogistic.online
+
+## Basic Commands in Git
+- Type git status
+- Type git add .
+- Type git commit -m "Your description"
+- Git pull origin (Your created branch)
+- Git push origin (Your created branch)
+- Switch to base repository (If pulling from the main repository)
