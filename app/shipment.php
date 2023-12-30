@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shipment Page</title>
-        <link rel="stylesheet" href="shipment.css">
+        <link rel="stylesheet" href="css/shipment1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
     <body>
@@ -121,17 +121,19 @@
         </main>
 
         <footer>
-            <div class="footer-button">
-                <i class="fas fa-home"></i>
-                <p>Home</p>
-            </div>
-            <div class="footer-button">
-                <i class="fas fa-clipboard-list"></i>
-                <p>Order</p>
-            </div>
-            <div class="footer-button">
-                <i class="fas fa-truck"></i>
-                <p>Shipment</p>
+            <div class="footer-icons">
+                <a href="index.php" class="icon-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="index_orders.php" class="icon-link">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Orders</span>
+                </a>
+                <a href="shipment.php" class="icon-link">
+                    <i class="fas fa-truck"></i>
+                    <span>Shipment</span>
+                </a>
             </div>
         </footer>
     </body>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orders Page</title>
-    <link rel="stylesheet" href="order_style.css">
+    <link rel="stylesheet" href="css/order_style.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -88,16 +88,15 @@
 
     <footer>
         <div class="footer-icons">
-            <a href="#" class="icon-link">
+            <a href="index.php" class="icon-link">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
-
-            <a href="#" class="icon-link">
+            <a href="index_orders.php" class="icon-link">
                 <i class="fas fa-file-alt"></i>
                 <span>Orders</span>
             </a>
-            <a href="#" class="icon-link">
+            <a href="shipment.php" class="icon-link">
                 <i class="fas fa-truck"></i>
                 <span>Shipment</span>
             </a>
