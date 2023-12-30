@@ -4,23 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Notifications Page</title>
-        <link rel="stylesheet" href="notifications.css">
+        <link rel="stylesheet" href="css/notifications.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
     <body>
         <header>
             <button class="button back-button">
-                <img src="back_icon.png" alt="Back">
+                <img src="images/back_icon.png" alt="Back">
             </button>
             <button class="button menu-button">
-                <img src="menu_icon.png" alt="Menu">
+                <img src="images/menu_icon.png" alt="Menu">
             </button>
         </header>
 
         <div class="title-container">
             <h2>Notifications</h2>
             <button class="button notification-button">
-                <img src="notification_icon.png" alt="Notifications">
+                <img src="images/notification_icon.png" alt="Notifications">
             </button>
         </div>
 
@@ -46,7 +46,7 @@
                     <div class="notification-text">
                         Your order 578195051452533365 was shipped. 16h
                     </div>
-                    <img src="mini_fan.png" alt="Product Image" class="product-image">
+                    <img src="images/mini_fan.png" alt="Product Image" class="product-image">
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
                     <div class="notification-text">
                         Your order 578195051452533365 has been picked up. 20h
                     </div>
-                    <img src="mini_fan.png" alt="Product Image" class="product-image">
+                    <img src="images/mini_fan.png" alt="Product Image" class="product-image">
                 </div>
             </div>
 
@@ -72,7 +72,7 @@
                     <div class="notification-text">
                         Your package PT6126252U8F2AG was delivered. 1d
                     </div>
-                    <img src="blouse.png" alt="Product Image" class="product-image">
+                    <img src="images/blouse.png" alt="Product Image" class="product-image">
                 </div>
             </div>
 
