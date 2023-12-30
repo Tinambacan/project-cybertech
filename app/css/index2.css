@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e8e8e8;
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e8e8;
+    overflow-y: hidden;
+    min-height: 100vh;
+}
+main {
+    flex: 1; /* Grow to fill available space */
+    overflow-y: auto; /* Allow scrolling within the main content if needed */
+}
+
+.container{
+    height: auto;
+    position: static;
+    background-color: #546ca1;
+    border-radius: 15px 15px;
+    padding-bottom: 30px;  
+}
+
+.input-location{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 25px;
+    width: 60%;
+    text-align: center;
+    border-radius: 75px 75px;
+}
+
+.fa-map-marker-alt {
+    position: absolute;
+    left: 30px;
+    top: 22px; 
+    transform: translateY(-50%);
+    color: #7e0202;
+}
+.h2-1{
+    margin-left: 35px;
+    margin-top: 10px;
+    color: white;
+}
+
+.p-1{
+    margin-left: 40px;
+    margin-top: 10px;
+    color: white;
+}
+.search-container {
+    position: relative;
+}
+  
+.input-tracking {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 40px;
+    width: 77%; 
+    padding-left: 40px; 
+}
+  
+.fa-search {
+    position: absolute;
+    left: 28px; /* Adjust the left position based on the desired space */
+    top: 67%; /* Center the icon vertically */
+    transform: translateY(-50%);
+    color: #b8bbc1;
+}
+  
+.search-tracking {
+    position: absolute;
+    right: 30px;
+    top: 67%; /* Adjust the top position based on the desired vertical alignment */
+    transform: translateY(-50%);
+    color: white;
+    background-color: #0f1c54;
+    height: 30px;
+    width: 70px;
+    border-radius: 75px 75px; /* This creates a circular shape for the button */
+    border: none;
+    cursor: pointer;
+}
+
+.tracking-history{
+    height: 390px;
+    position: relative;
+    background-color: #e8e8e8;
+    border-radius: 15px 15px;
+    overflow-y: auto;  
+}
+
+.tracking-history h2{
+    padding: 10px;
+}
+.shop {
+    display: flex;
+    height: 100px;
+    background-color: #6aabd2;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.shop-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: -30px; /* Adjust the margin as needed */
+}
+
+.shop-info p {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+}
+
+.shop-location {
+    height: 80px;
+    margin-top: 10px;
+}
+
+.current-shipment h2{
+    padding: 10px;
+}
+.container-shipment{
+    display: flex; 
+}
+.container-shipment-progress{
+    height: auto;
+    margin: 10px;
+    position: relative;
+    background-color: #6aabd2;
+    border-radius: 20px; 
+
+}
+.shipment-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+.shipment-loc {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+}
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 13px 0 0 8px;
+    margin-left: 15px;
+    
+
+}
+.dotted-list{
+    margin-left: 5px;
+    color: white;
+    margin-top: -25px;
+    margin-bottom: -20px;
+}
+.step {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.shipment-status{
+    font-weight: 300;
+}
+
+.fa-circle {
+    border-radius: 50%;
+    color: white;
+    font-size: .6em;
+    margin-right: 10px;
+    position: relative;
+    border: 2px solid white;
+    padding: 3px;
+}
+.final-location {
+    color: red;
+    border: 2px solid red;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #546ca1;
+    color: #fff;
+    padding: 8px;
+    margin-top: auto;
+}
+
+
+.footer-icons {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #546ca1;
+    color: #fff;
+    padding: 8px;
+    margin-top: auto;
+}
+
+.icon-link {
+    text-align: center;
+    text-decoration: none; 
+    color: #fff; 
+    margin: 0 38px; 
+}
+
+.footer-icons i {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+.footer-icons a:hover i {
+    color: #374d7b;
+}
+.icon-link:hover i {
+    color: #374d7b; 
+}
+
+.footer-icons span {
+    font-size: x-small;
+    margin: 0;
+}
+
+@media (min-height: 700px) {
+    .tracking-history {
+        height: auto;
+    }
+}
