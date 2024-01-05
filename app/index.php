@@ -11,16 +11,15 @@
 <div class="wrapper">
         <div class="container">
             <i class="fas fa-map-marker-alt"></i>
-            <input class="input-location" type="text" placeholder="Lower Bicutan, Taguig"  readonly>
+            <input class="input-location" type="text" 
+                placeholder="Lower Bicutan, Taguig" readonly>
             <h2 class="h2-1">Let's track your package</h2>
             <p class="p-1">Please enter your tracking number: </p>
             <div class="search-container">
                 <i class="fas fa-search fa-2xl"></i>
-                <input type="text" class="input-tracking" placeholder="Enter tracking number">
+                <input type="text" class="input-tracking" 
+                    placeholder="Enter tracking number">
                 <button class="search-tracking">Search</button>
-            </div>
-            <div class="">
-
             </div>
         </div>
         <main>

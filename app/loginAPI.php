@@ -11,22 +11,35 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$query = "SELECT * FROM delivery_partner";
-$result = mysqli_query($conn, $query);
+header('Content-Type: application/json');
 
-$response = [];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-    while($row = mysqli_fetch_assoc($result)) {
-        array_push($response, array(
-            'partner_id'=>$row["partner_id"],
-            'username'=> $row["username"],
-            'password'=> $row["password"],
-            'rider_name'=> $row["rider_name"],
-            'vehicle'=> $row["vehicle"]
-            )
-        );    
+    $query = "SELECT username, password FROM delivery_partner WHERE username = ?";
+    $stmt = mysqli_prepare($conn, $query);
+    mysqli_stmt_bind_param($stmt, "s", $username);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_bind_result($stmt, $dbUsername, $hashPassword);
+
+    if (mysqli_stmt_fetch($stmt)) {
+        if (password_verify($password, $hashPassword)) {
+            $response = array('status' => 'success', 'message' => 'Login successful!', 'username' => $dbUsername);
+        } else {
+            $response = array('status' => 'error', 'message' => 'Invalid password');
+        }
+    } else {
+        $response = array('status' => 'error', 'message' => 'Invalid username');
     }
 
-    echo json_encode($response);
-    $conn->close();
+    mysqli_stmt_close($stmt);
+} else {
+    $response = array('status' => 'error', 'message' => 'Invalid request method');
+}
+
+// Output the response as JSON
+echo json_encode($response);
+
+mysqli_close($conn);
 ?>
