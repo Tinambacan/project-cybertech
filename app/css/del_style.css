@@ -1,0 +1,43 @@
+table {
+    width: 79%;
+    border-collapse: collapse;
+    border-spacing: 5px 0;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 3px solid #0a0a0a;
+    padding: 8px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.partner-container, .partner-dropdown {
+    margin-left: 20%;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 150px; 
+    box-sizing: border-box; 
+}
+
+.partner-dropdown select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    outline: none;
+    width: 500%; 
+    height: 63px; 
+    margin-left: -260px; 
+}
+
+.partner-box {
+    background-color: #91B2EB;
+    border: 1px solid #ddd;
+    padding: 1px;
+    text-align: center;
+}
