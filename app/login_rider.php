@@ -44,7 +44,6 @@
     </style>
 </head>
 <body>
-
     <form onsubmit="submitForm(event)">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
@@ -54,7 +53,6 @@
 
         <button type="submit">Login</button>
     </form>
-
 </body>
 <script>
     function submitForm(event) {
@@ -67,7 +65,7 @@
         formData.append('username', username);
         formData.append('password', password);
 
-        xhr.open('POST', 'loginAPI.php', true); //
+        xhr.open('POST', 'controller/controller_rider_login_api.php', true); //
 
         xhr.onload = function () {
             if (xhr.status === 200) {
@@ -75,7 +73,7 @@
                 console.log(response);
                 if (response.status === 'success') {
                     console.log('Login successful for user: ' + response.username);
-                    window.location.href = 'assignDelivery.php'; // Adjust the URL accordingly
+                    window.location.href = 'assign_delivery.php'; // Adjust the URL accordingly
                 } else {
                     console.log("Error Login: " + response.message);
                 }

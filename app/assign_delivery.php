@@ -1,4 +1,4 @@
-<?php require_once('adminHeader.php');?>
+<?php require_once('admin_header.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Assign Delivery</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="css/assignDelivery.css">
+        <link rel="stylesheet" href="css/assignDelivery1.css">
     </head>
     <body>
         <div class="table-container">
@@ -18,7 +18,7 @@
                         <th>Shipper Name</th>
                         <th>Receiver Name</th>
                         <th>Status</th>
-                        <th></th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -133,4 +133,4 @@
     </body>
 </html>
 
-<?php require_once('adminFooter.php');?>
+<?php require_once('admin_footer.php');?>

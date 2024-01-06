@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['admin_id'])) {
+    // User is not logged in, redirect to the login page
+    header('Location: logistics_adminlogin.php');
+}
+$adminID = $_SESSION['admin_id'];
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,11 +25,11 @@
         <p>Cybertech<br>Logistics</p>
     </div>
     <div class="link-tag">
-        <a href="assignDelivery.php" class="list-group-item" onclick="setActive(this)">
+        <a href="assign_delivery.php" class="list-group-item" onclick="setActive(this)">
             <i class="fa-solid fa-truck fa-lg"></i>Assign Delivery</a>
-        <a href="deliveryList.php" class="list-group-item" onclick="setActive(this)">
+        <a href="delivery_list.php" class="list-group-item" onclick="setActive(this)">
             <i class="fas fa-clipboard-list fa-lg"></i>Delivert List</a>
-        <a href="accountRider.php" class="list-group-item" onclick="setActive(this)">
+        <a href="account_rider.php" class="list-group-item" onclick="setActive(this)">
             <i class="far fa-user-circle fa-lg"></i>Accounts</a>
     </div>
 </div>

@@ -1,6 +1,6 @@
-<?php require_once('adminHeader.php');?>
+<?php require_once('admin_header.php');?>
 
-<link rel="stylesheet" href="css/account_rider_style.css">
+<link rel="stylesheet" href="css/account_rider_style1.css">
 
 <div class="account">
 <h2>Account</h2>
@@ -50,4 +50,4 @@
     </div>
 </div>
 
-<?php require_once('adminFooter.php');?>
+<?php require_once('admin_footer.php');?>

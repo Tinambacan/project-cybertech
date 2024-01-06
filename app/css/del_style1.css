@@ -1,11 +1,11 @@
 
 table {
-    width: 79%;
+    width: 100%; /* Use 100% to make it fit the viewport width */
     border-collapse: collapse;
     border-spacing: 5px 0;
-    margin-left: 20%;
-    margin-bottom: 20px;
+    
 }
+
 
 th, td {
     border: 3px solid #0a0a0a;
@@ -17,23 +17,11 @@ tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-.partner-container, .partner-dropdown {
-    margin-left: 20%;
+.partner-container {
+    display: flex;
+    padding-top: 20px;
     margin-bottom: 20px;
-    display: inline-block;
-    vertical-align: top;
-    width: 150px; 
     box-sizing: border-box; 
-}
-
-.partner-dropdown select {
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #000000;
-    outline: none;
-    width: 500%; 
-    height: 63px; 
-    margin-left: -260px; 
 }
 
 .partner-box {
@@ -41,4 +29,16 @@ tbody tr:nth-child(even) {
     border: 1px solid #ddd;
     padding: 1px;
     text-align: center;
+    width: 20%;
 }
+
+.partner-dropdown select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    outline: none;
+    width: 900%; 
+    height: 63px; 
+}
+
+
